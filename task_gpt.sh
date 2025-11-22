@@ -68,10 +68,6 @@ submit_batch() {
     # Run locally in background
     (
         cd ${WORK_DIR}
-        source /root/miniconda3/etc/profile.d/conda.sh
-        conda activate earthagent
-        export PROJ_DATA=/root/miniconda3/envs/earthagent/lib/python3.10/site-packages/pyproj/proj_dir/share/proj
-        export GDAL_DATA=/root/miniconda3/envs/earthagent/share/gdal
         python ${script_path} \
             --enhanced_config ${config_path} \
             --batch_dir ${batch_dir} \

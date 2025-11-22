@@ -1,8 +1,20 @@
 # Dataset folder
 benchmark/data/
-agent/
 evaluate_langchain/
 logs/
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.key
+*_secrets.json
+
+# Configuration files with API keys (templates are OK)
+agent/config_*.json
+!agent/config_*.json.example
+training_free_grpo/configs/*_config.json
+!training_free_grpo/configs/*_config.json.example
 
 # Python
 __pycache__/

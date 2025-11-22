@@ -57,7 +57,7 @@
       "max_tokens": 4096,
       "timeout": 120
     },
-    "practice_dataset_path": "../benchmark/question.json",
+    "practice_dataset_path": "/mnt/dhwfile/zhuleqi/ICLR/Earth-Agent/benchmark/question.json",
     "eval_dataset_path": null,
     "question_ids": [
       "10",
@@ -124,7 +124,7 @@
     "output_dir": "./training_free_results_kimi_k2",
     "log_dir": "./training_free_logs_kimi_k2",
     "verify_module": "earth_science",
-    "langchain_config_path": "../agent/config_Kimik2.json",
+    "langchain_config_path": "/mnt/dhwfile/zhuleqi/ICLR/Earth-Agent/agent/config_Kimik2.json",
     "use_autoplanning": true
   },
   "timestamp": "2025-11-22T06:53:22.331319"

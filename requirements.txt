@@ -2,6 +2,9 @@
 apt-get install gdal-bin libgdal-dev
 conda install gdal=3.4.1 -c conda-forge
 
+# Environment and configuration
+python-dotenv>=1.1.0
+
 # LangChain and MCP
 fastmcp==2.11.3
 langchain==0.3.27

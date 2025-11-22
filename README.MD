@@ -135,20 +135,11 @@ The framework supports multiple models. Configuration files are located in `agen
 Run evaluation for a single model:
 
 ```bash
-# Example: Evaluate GPT-5 model
-python main.py --config agent/config_gpt5.json --mode evaluation
+# Zero-shot eval: Move langchain_gpt5.py at Earth-Agent/langchain_gpt5.py
+python langchain_gpt5.py
 
-# Example: Evaluate DeepSeek model
-python main.py --config agent/config_deepseek.json --mode evaluation
-```
-
-### 2. Batch Model Evaluation
-
-Run evaluation for multiple models:
-
-```bash
-# Run all configured models
-python batch_evaluate.py --config_dir agent/ --output_dir ./evaluate_langchain
+# Training Free Evolution eval: 
+bash task_gpt.sh
 ```
 
 ## 📊 Evaluation Metrics
@@ -195,7 +186,7 @@ evaluate_langchain/
 └── ...
 ```
 
-### 4. Batch Evaluation Results
+### 4. Evaluation Results
 
 Combined results for all models:
 

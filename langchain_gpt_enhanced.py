@@ -20,6 +20,9 @@ from langgraph.prebuilt import create_react_agent
 from langchain_openai import ChatOpenAI
 from langchain_core.messages import HumanMessage
 
+# Import config utilities for secure credential handling
+from config_utils import load_env, load_config_with_env
+
 # Pprint for debugging
 from pprint import pprint
 
@@ -158,9 +161,12 @@ def save_chat_message(chat_log_path, message_data):
 
 def load_langchain_config(config_path='./agent/config_Kimik2.json'):
     """Load configuration and initialize LangChain components"""
-    with open(config_path, 'r') as f:
-        config = json.load(f)
-    
+    # Load environment variables from .env file
+    load_env()
+
+    # Load config with environment variable substitution
+    config = load_config_with_env(config_path)
+
     # Initialize OpenAI model with stricter parameters
     model_config = config['models'][0]
     llm_kwargs = {
