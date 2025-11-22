@@ -10,9 +10,9 @@
 WORK_DIR="/root/autodl-tmp/Earth-Agent"
 
 # Configuration
-BATCH_SIZE=4
+BATCH_SIZE=40
 TOTAL_QUESTIONS=188
-MAX_PARALLEL_JOBS=50  # Maximum number of jobs to run in parallel (to avoid cluster limits)
+MAX_PARALLEL_JOBS=5 # Maximum number of jobs to run in parallel (to avoid cluster limits)
 
 # Create logs directory if it doesn't exist
 mkdir -p "${WORK_DIR}/logs"
