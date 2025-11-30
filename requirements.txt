@@ -1,6 +1,6 @@
 # Note: GDAL requires system dependencies. Install with:
-apt-get install gdal-bin libgdal-dev
-conda install gdal=3.4.1 -c conda-forge
+
+
 
 # Environment and configuration
 python-dotenv>=1.1.0
