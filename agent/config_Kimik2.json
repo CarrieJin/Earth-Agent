@@ -46,7 +46,7 @@
             "config_name": "kimi-k2-0905-preview",
             "model_type": "openai_chat",
             "model_name": "kimi-k2-0905-preview",
-            "api_key": "sk-sAOaIuaTbzermaJnJJAZzNnLdqQ38zxC2cYawqEQZ7zfTBE5",
+            "api_key": ,
             "client_args": {
                 "base_url": "http://35.220.164.252:3888/v1/"
             },
